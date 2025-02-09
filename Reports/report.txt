@@ -1,0 +1,341 @@
+
+Original data:
+    Final Exam  Repeat Exam  ...  Optional Activity 9  Optional Activity 10
+0        10.0          0.0  ...                  0.0                   0.0
+1         9.1          0.0  ...                  3.0                   0.0
+2         9.0          0.0  ...                  0.0                   0.0
+3         8.8          0.0  ...                  0.0                   3.0
+4         8.8          0.0  ...                  2.0                   3.0
+
+[5 rows x 24 columns]
+
+Scaled original data:
+    Final Exam  Repeat Exam  ...  Optional Activity 9  Optional Activity 10
+0    2.100593    -0.501348  ...            -0.372164             -0.329178
+1    1.808583    -0.501348  ...             2.093422             -0.329178
+2    1.776138    -0.501348  ...            -0.372164             -0.329178
+3    1.711246    -0.501348  ...            -0.372164              2.124229
+4    1.711246    -0.501348  ...             1.271560              2.124229
+
+[5 rows x 24 columns]
+Shape of the dataset:  (159, 24)
+Dataset description:         Final Exam  Repeat Exam  ...  Optional Activity 9  Optional Activity 10
+count  159.000000   159.000000  ...           159.000000            159.000000
+mean     3.525786     1.046541  ...             0.452830              0.402516
+std      3.091827     2.094048  ...             1.220594              1.226653
+min      0.000000     0.000000  ...             0.000000              0.000000
+25%      0.000000     0.000000  ...             0.000000              0.000000
+50%      3.900000     0.000000  ...             0.000000              0.000000
+75%      6.000000     0.000000  ...             0.000000              0.000000
+max     10.000000     9.100000  ...             5.000000              5.000000
+
+[8 rows x 24 columns]
+Class Distribution:  Final Exam
+0.0     58
+1.1      1
+1.5      1
+2.0      2
+2.3      2
+2.4      2
+2.5      1
+2.6      1
+2.7      2
+2.8      1
+3.0      2
+3.4      1
+3.5      2
+3.6      1
+3.9      3
+4.0      4
+5.0     12
+5.1      2
+5.2      3
+5.3      8
+5.4      1
+5.5      3
+5.6      1
+5.7      2
+5.8      1
+6.0      3
+6.3      2
+6.4      1
+6.5      3
+6.7      2
+6.8      1
+6.9      1
+7.0      4
+7.2      3
+7.3      2
+7.4      2
+7.5      3
+7.6      3
+7.7      2
+8.1      1
+8.2      1
+8.4      1
+8.5      2
+8.8      2
+9.0      1
+9.1      1
+10.0     1
+dtype: int64
+Inertia values for different number of clusters:
+Clusters: 1, Inertia: 3816.0
+Clusters: 2, Inertia: 2734.8072541399447
+Clusters: 3, Inertia: 2155.648641962753
+Clusters: 4, Inertia: 1965.358163183786
+Clusters: 5, Inertia: 1881.7246911813204
+Clusters: 6, Inertia: 1744.378579958056
+Clusters: 7, Inertia: 1683.8730762779473
+Clusters: 8, Inertia: 1616.6740088616182
+Clusters: 9, Inertia: 1576.9958931780493
+Clusters: 10, Inertia: 1454.7776035476936
+
+Cluster Summary:
+                Final Exam  ...  Optional Activity 10
+Cluster_kmeans              ...                      
+0                 3.643077  ...              0.053846
+1                 1.311765  ...              0.000000
+2                 5.818182  ...              3.909091
+3                 6.028125  ...              0.546875
+
+[4 rows x 24 columns]
+
+Cluster Summary:
+            Final Exam  Repeat Exam  ...  Optional Activity 10  Cluster_kmeans
+Cluster_hc                           ...                                      
+0             1.513725     0.843137  ...              0.000000        0.960784
+1             6.095833     1.237500  ...              2.125000        2.541667
+2             3.372581     1.398387  ...              0.112903        0.064516
+3             5.818182     0.318182  ...              0.272727        2.500000
+
+[4 rows x 25 columns]
+DBSCAN with eps = 0.3 and min_samples = 3
+Number of clusters: 1
+Cluster labels: {np.int64(0), np.int64(-1)}
+
+
+Cluster Summary:
+                Final Exam  Repeat Exam  ...  Cluster_kmeans  Cluster_hc
+Cluster_dbscan                           ...                            
+-1                3.616774     1.073548  ...        1.064516    1.380645
+ 0                0.000000     0.000000  ...        1.000000    0.000000
+
+[2 rows x 26 columns]
+DBSCAN with eps = 0.3 and min_samples = 5
+Number of clusters: 0
+Cluster labels: {np.int64(-1)}
+
+
+Cluster Summary:
+                Final Exam  Repeat Exam  ...  Cluster_kmeans  Cluster_hc
+Cluster_dbscan                           ...                            
+-1                3.525786     1.046541  ...        1.062893    1.345912
+
+[1 rows x 26 columns]
+DBSCAN with eps = 0.3 and min_samples = 7
+Number of clusters: 0
+Cluster labels: {np.int64(-1)}
+
+
+Cluster Summary:
+                Final Exam  Repeat Exam  ...  Cluster_kmeans  Cluster_hc
+Cluster_dbscan                           ...                            
+-1                3.525786     1.046541  ...        1.062893    1.345912
+
+[1 rows x 26 columns]
+DBSCAN with eps = 0.3 and min_samples = 10
+Number of clusters: 0
+Cluster labels: {np.int64(-1)}
+
+
+Cluster Summary:
+                Final Exam  Repeat Exam  ...  Cluster_kmeans  Cluster_hc
+Cluster_dbscan                           ...                            
+-1                3.525786     1.046541  ...        1.062893    1.345912
+
+[1 rows x 26 columns]
+DBSCAN with eps = 0.4 and min_samples = 3
+Number of clusters: 1
+Cluster labels: {np.int64(0), np.int64(-1)}
+
+
+Cluster Summary:
+                Final Exam  Repeat Exam  ...  Cluster_kmeans  Cluster_hc
+Cluster_dbscan                           ...                            
+-1                3.616774     1.073548  ...        1.064516    1.380645
+ 0                0.000000     0.000000  ...        1.000000    0.000000
+
+[2 rows x 26 columns]
+DBSCAN with eps = 0.4 and min_samples = 5
+Number of clusters: 0
+Cluster labels: {np.int64(-1)}
+
+
+Cluster Summary:
+                Final Exam  Repeat Exam  ...  Cluster_kmeans  Cluster_hc
+Cluster_dbscan                           ...                            
+-1                3.525786     1.046541  ...        1.062893    1.345912
+
+[1 rows x 26 columns]
+DBSCAN with eps = 0.4 and min_samples = 7
+Number of clusters: 0
+Cluster labels: {np.int64(-1)}
+
+
+Cluster Summary:
+                Final Exam  Repeat Exam  ...  Cluster_kmeans  Cluster_hc
+Cluster_dbscan                           ...                            
+-1                3.525786     1.046541  ...        1.062893    1.345912
+
+[1 rows x 26 columns]
+DBSCAN with eps = 0.4 and min_samples = 10
+Number of clusters: 0
+Cluster labels: {np.int64(-1)}
+
+
+Cluster Summary:
+                Final Exam  Repeat Exam  ...  Cluster_kmeans  Cluster_hc
+Cluster_dbscan                           ...                            
+-1                3.525786     1.046541  ...        1.062893    1.345912
+
+[1 rows x 26 columns]
+DBSCAN with eps = 0.5 and min_samples = 3
+Number of clusters: 1
+Cluster labels: {np.int64(0), np.int64(-1)}
+
+
+Cluster Summary:
+                Final Exam  Repeat Exam  ...  Cluster_kmeans  Cluster_hc
+Cluster_dbscan                           ...                            
+-1                3.616774     1.073548  ...        1.064516    1.380645
+ 0                0.000000     0.000000  ...        1.000000    0.000000
+
+[2 rows x 26 columns]
+DBSCAN with eps = 0.5 and min_samples = 5
+Number of clusters: 0
+Cluster labels: {np.int64(-1)}
+
+
+Cluster Summary:
+                Final Exam  Repeat Exam  ...  Cluster_kmeans  Cluster_hc
+Cluster_dbscan                           ...                            
+-1                3.525786     1.046541  ...        1.062893    1.345912
+
+[1 rows x 26 columns]
+DBSCAN with eps = 0.5 and min_samples = 7
+Number of clusters: 0
+Cluster labels: {np.int64(-1)}
+
+
+Cluster Summary:
+                Final Exam  Repeat Exam  ...  Cluster_kmeans  Cluster_hc
+Cluster_dbscan                           ...                            
+-1                3.525786     1.046541  ...        1.062893    1.345912
+
+[1 rows x 26 columns]
+DBSCAN with eps = 0.5 and min_samples = 10
+Number of clusters: 0
+Cluster labels: {np.int64(-1)}
+
+
+Cluster Summary:
+                Final Exam  Repeat Exam  ...  Cluster_kmeans  Cluster_hc
+Cluster_dbscan                           ...                            
+-1                3.525786     1.046541  ...        1.062893    1.345912
+
+[1 rows x 26 columns]
+DBSCAN with eps = 0.6 and min_samples = 3
+Number of clusters: 2
+Cluster labels: {np.int64(0), np.int64(1), np.int64(-1)}
+
+
+Cluster Summary:
+                Final Exam  Repeat Exam  ...  Cluster_kmeans  Cluster_hc
+Cluster_dbscan                           ...                            
+-1                3.712583     1.101987  ...        1.066225    1.417219
+ 0                0.000000     0.000000  ...        1.000000    0.000000
+ 1                0.000000     0.000000  ...        1.000000    0.000000
+
+[3 rows x 26 columns]
+DBSCAN with eps = 0.6 and min_samples = 5
+Number of clusters: 1
+Cluster labels: {np.int64(0), np.int64(-1)}
+
+
+Cluster Summary:
+                Final Exam  Repeat Exam  ...  Cluster_kmeans  Cluster_hc
+Cluster_dbscan                           ...                            
+-1                 3.64026     1.080519  ...        1.064935     1.38961
+ 0                 0.00000     0.000000  ...        1.000000     0.00000
+
+[2 rows x 26 columns]
+DBSCAN with eps = 0.6 and min_samples = 7
+Number of clusters: 0
+Cluster labels: {np.int64(-1)}
+
+
+Cluster Summary:
+                Final Exam  Repeat Exam  ...  Cluster_kmeans  Cluster_hc
+Cluster_dbscan                           ...                            
+-1                3.525786     1.046541  ...        1.062893    1.345912
+
+[1 rows x 26 columns]
+DBSCAN with eps = 0.6 and min_samples = 10
+Number of clusters: 0
+Cluster labels: {np.int64(-1)}
+
+
+Cluster Summary:
+                Final Exam  Repeat Exam  ...  Cluster_kmeans  Cluster_hc
+Cluster_dbscan                           ...                            
+-1                3.525786     1.046541  ...        1.062893    1.345912
+
+[1 rows x 26 columns]
+DBSCAN with eps = 0.7 and min_samples = 3
+Number of clusters: 2
+Cluster labels: {np.int64(0), np.int64(1), np.int64(-1)}
+
+
+Cluster Summary:
+                Final Exam  Repeat Exam  ...  Cluster_kmeans  Cluster_hc
+Cluster_dbscan                           ...                            
+-1                3.762416     1.116779  ...        1.067114    1.436242
+ 0                0.000000     0.000000  ...        1.000000    0.000000
+ 1                0.000000     0.000000  ...        1.000000    0.000000
+
+[3 rows x 26 columns]
+DBSCAN with eps = 0.7 and min_samples = 5
+Number of clusters: 1
+Cluster labels: {np.int64(0), np.int64(-1)}
+
+
+Cluster Summary:
+                Final Exam  Repeat Exam  ...  Cluster_kmeans  Cluster_hc
+Cluster_dbscan                           ...                            
+-1                 3.64026     1.080519  ...        1.064935     1.38961
+ 0                 0.00000     0.000000  ...        1.000000     0.00000
+
+[2 rows x 26 columns]
+DBSCAN with eps = 0.7 and min_samples = 7
+Number of clusters: 0
+Cluster labels: {np.int64(-1)}
+
+
+Cluster Summary:
+                Final Exam  Repeat Exam  ...  Cluster_kmeans  Cluster_hc
+Cluster_dbscan                           ...                            
+-1                3.525786     1.046541  ...        1.062893    1.345912
+
+[1 rows x 26 columns]
+DBSCAN with eps = 0.7 and min_samples = 10
+Number of clusters: 0
+Cluster labels: {np.int64(-1)}
+
+
+Cluster Summary:
+                Final Exam  Repeat Exam  ...  Cluster_kmeans  Cluster_hc
+Cluster_dbscan                           ...                            
+-1                3.525786     1.046541  ...        1.062893    1.345912
+
+[1 rows x 26 columns]
