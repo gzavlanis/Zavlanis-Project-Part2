@@ -3,7 +3,7 @@ from src.Data_Preprocessing import DataPreprocessing
 from Models.Models import Models
 import src.Plots as plots
 import pandas as pd
-import  sys
+import sys
 
 def main():
     with open('./Reports/report.txt', 'w') as f:
