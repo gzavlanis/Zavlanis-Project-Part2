@@ -93,5 +93,5 @@ class Models:
                 ax.set_ylabel('PCA Component 2')
 
         plt.tight_layout(rect = [0, 0, 1, 0.96])
-        plt.show()
         plt.savefig(f'./Plots/DBSCAN Clustering with Different Parameters.png')
+        plt.show()
